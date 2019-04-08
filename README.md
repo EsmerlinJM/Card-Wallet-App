@@ -1,6 +1,6 @@
 # Card Wallet
 
-Your credit cards, debits, etc. to your hand
+Your credit cards, debits, etc. in your hand
 
 ![Alt Text](https://cdn.dribbble.com/users/1292879/screenshots/4536120/manage_cards_01.gif)
 
