@@ -1,0 +1,30 @@
+{
+    "cardResults": [{
+            "cardHolderName": "ESMERLIN MIESES",
+            "cardNumber": "4485237981781168",
+            "cardMonth": "12",
+            "cardYear": "2025",
+            "cardCvv": "150",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "JUAN JIMENEZ",
+            "cardNumber": "5456299532332190",
+            "cardMonth": "11",
+            "cardYear": "2022",
+            "cardCvv": "130",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "MIGUEL PEREZ",
+            "cardNumber": "4539887342960806",
+            "cardMonth": "03",
+            "cardYear": "2020",
+            "cardCvv": "370",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        }
+    ]
+}
