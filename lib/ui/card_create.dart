@@ -103,7 +103,7 @@ class _CardCreate extends State<CardCreate> {
       stream: bloc.cardMonth,
       builder: (context, snapshot) {
         return Container(
-          width: 85.0,
+           width: 100.0,
           child: TextField(
             onChanged: bloc.changeCardMonth,
             keyboardType: TextInputType.number,
@@ -217,15 +217,15 @@ class _CardCreate extends State<CardCreate> {
                     padding: const EdgeInsets.all(20.0),
                     child: Column(
                       children: <Widget>[
-                        SizedBox(height: 8.0),
+                        //SizedBox(height: 8.0),
                         _cardHolderName,
                         _cardNumber,
-                        SizedBox(height: 10.0),
+                        SizedBox(height: 12.0),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             _cardMonth,
-                            SizedBox(width: 50.0),
+                            SizedBox(width: 26.0),
                             _cardYear,
                             SizedBox(width: 20.0),
                             _cardVerificationValue,
