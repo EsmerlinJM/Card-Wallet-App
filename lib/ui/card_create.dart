@@ -65,7 +65,7 @@ class _CardCreate extends State<CardCreate> {
               border: InputBorder.none,
               filled: true,
               fillColor: Colors.white,
-              hintText: 'Cardholder name',
+              hintText: 'Cardholder Name',
               errorText: snapshot.error,
             ),
           );
@@ -266,7 +266,7 @@ class _CardCreate extends State<CardCreate> {
                           ? Icon(
                               Icons.check,
                               color: Colors.white,
-                              size: 12.0,
+                              size: 16.0,
                             )
                           : Container()
                       : Container(),

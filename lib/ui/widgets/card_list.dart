@@ -25,7 +25,7 @@ class CardList extends StatelessWidget{
                     );
                   },
                   itemCount: snapshot.data.length,
-                  itemWidth: _screenSize.width * 0.7,
+                  itemWidth: _screenSize.width * 0.61,
                   itemHeight: _screenSize.height * 0.52,
                   layout: SwiperLayout.STACK,
                   scrollDirection: Axis.vertical,
@@ -154,8 +154,8 @@ class CardFromList extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 3.0),
           child: Container(
-            width: 6.0,
-            height: 6.0,
+            width: 9.0,
+            height: 9.0,
             decoration: BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle
@@ -165,7 +165,7 @@ class CardFromList extends StatelessWidget {
       );
       if(counter == 4){
         counter = 0;
-        dotList.add(SizedBox(width: 60.0));
+        dotList.add(SizedBox(width: 50.0));
       }
     }
     dotList.add(_buildNumbers());

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './ui/app.dart';
+import './ui/splash_screen.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -7,5 +8,5 @@ void main() => runApp(MaterialApp(
     primaryColor: Colors.white,
     primaryColorBrightness: Brightness.light
   ),
-  home: App(),
+  home: SplashScreen()//App(),
 ));
