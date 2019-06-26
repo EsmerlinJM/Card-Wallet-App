@@ -26,11 +26,17 @@ dependencies:
   rxdart: ^0.21.0
   flutter_swiper: ^1.1.6
   flip_card: ^0.2.1
+  flutter_launcher_icons: ^0.7.0
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: true 
+  ios: true
+  image_path: "assets/wallet_icon.png"
 
 
 # For information on the generic Dart part of this file, see the
@@ -46,10 +52,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/visa_logo.png
-    - assets/creditcardchipsilver.png
-    - assets/card_band.jpg
-    - assets/card_back.jpg
+    - assets/
     - data/initialData.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

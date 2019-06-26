@@ -11,12 +11,19 @@ class _SplashScreenState extends State<SplashScreen>{
   @override
   void initState(){
     super.initState();
-    Timer(Duration(seconds: 6), () => Navigator.push(
-      context, 
+    loadData();
+  }
+
+  Future<Timer> loadData() async{
+    return Timer(Duration(seconds: 5), onDoneLoading);
+  }
+
+  onDoneLoading() async {
+    Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (context) => App()
+        builder: (context) => App() 
       )
-    ));
+    );
   }
 
   @override
@@ -27,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen>{
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
-              color: Colors.blueAccent
+              color: Colors.white
             ),
           ),
           Column(
@@ -41,47 +48,51 @@ class _SplashScreenState extends State<SplashScreen>{
                     children: <Widget>[
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                        radius: 80.0,
-                        child: Icon(
-                          Icons.account_balance_wallet,
-                          color: Colors.blueAccent,
-                          size: 80.0,
+                        radius: 120.0,
+                        child: Image(
+                          image: AssetImage('assets/006-wallet-3.png'),
+                          width: 148.0,
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 15.0),
+                        padding: EdgeInsets.only(top: 30.0),
                       ),
-                      Text(
-                        'Card Wallet App',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 26.0
-                        ),
-                      )
+                      CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
+                    )
+                      // Text(
+                      //   'Card Wallet App',
+                      //   style: TextStyle(
+                      //     color: Colors.black,
+                      //     fontWeight: FontWeight.bold,
+                      //     fontSize: 32.0,
+                      //   ),
+                      // )
                     ],
                   ),
                 ),
               ),
-              Expanded(
-                flex: 1,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    //CircularProgressIndicator(),
-                    Padding(padding: EdgeInsets.only(top: 20.0),),
-                    Text(
-                      'Your credits cards \n in yours hands',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold
-                      ),
-                    )
-                  ],
-                ),
-              )
+              // Expanded(
+              //   flex: 1,
+              //   child: Column(
+              //     mainAxisAlignment: MainAxisAlignment.center,
+              //     children: <Widget>[
+              //       CircularProgressIndicator(
+              //         valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
+              //       ),
+              //       Padding(padding: EdgeInsets.only(top: 25.0)),
+              //       Text(
+              //         'Your credits cards \n in yours hands.',
+              //         textAlign: TextAlign.center,
+              //         style: TextStyle(
+              //           color: Colors.black,
+              //           fontSize: 18.0,
+              //           fontWeight: FontWeight.bold
+              //         ),
+              //       )
+              //     ],
+              //   ),
+              // )
             ],
           )
         ],

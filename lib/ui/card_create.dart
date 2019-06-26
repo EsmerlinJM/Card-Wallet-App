@@ -39,6 +39,14 @@ class _CardCreate extends State<CardCreate> {
   @override
   Widget build(BuildContext context) {
     final CardBloc bloc = BlocProvider.of<CardBloc>(context);
+    
+    // final _cardCompany = Padding(
+    //   padding: const EdgeInsets.only(top: 6.0),
+    //   child: DropdownMenuItem(
+    //     value: 'Mastercard',
+    //     child: Text('Mastercard'),
+    //   ),
+    // );
 
     final _creditCard = Padding(
       padding: const EdgeInsets.only(top: 6.0),
