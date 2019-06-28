@@ -1,4 +1,5 @@
 # Card Wallet
+[![Give me a cup coffe :)](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/esmerlinjm)
 
 Your credit cards, debits, etc. in your hands
 
