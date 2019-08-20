@@ -111,7 +111,7 @@ class _CardCreate extends State<CardCreate> {
       stream: bloc.cardMonth,
       builder: (context, snapshot) {
         return Container(
-           width: 100.0,
+           width: 50.0,
           child: TextField(
             onChanged: bloc.changeCardMonth,
             keyboardType: TextInputType.number,
@@ -134,7 +134,7 @@ class _CardCreate extends State<CardCreate> {
         stream: bloc.cardYear,
         builder: (context, snapshot) {
           return Container(
-            width: 120.0,
+            width: 60.0,
             child: TextField(
               onChanged: bloc.changeCardYear,
               keyboardType: TextInputType.number,
@@ -156,7 +156,7 @@ class _CardCreate extends State<CardCreate> {
         stream: bloc.cardCvv,
         builder: (context, snapshot) {
           return Container(
-            width: 85.0,
+            width: 70.0,
             child: TextField(
               focusNode: _focusNode,
               onChanged: bloc.changeCardCvv,
@@ -179,6 +179,7 @@ class _CardCreate extends State<CardCreate> {
       builder: (context, snapshot) {
         return Container(
           width: MediaQuery.of(context).size.width - 40,
+          height: 50,
           child: RaisedButton(
             child: Text(
               'Save Card',
@@ -214,6 +215,7 @@ class _CardCreate extends State<CardCreate> {
           padding: EdgeInsets.only(top: 30.0),
           children: <Widget>[
             Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Expanded(
                   flex: 3,
@@ -224,13 +226,14 @@ class _CardCreate extends State<CardCreate> {
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        //SizedBox(height: 8.0),
                         _cardHolderName,
                         _cardNumber,
                         SizedBox(height: 12.0),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        Wrap(
+                          alignment: WrapAlignment.start,
+                          runSpacing: 10,
                           children: <Widget>[
                             _cardMonth,
                             SizedBox(width: 26.0),
