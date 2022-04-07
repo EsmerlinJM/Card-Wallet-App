@@ -1,5 +1,5 @@
 # Card Wallet
-[![Give me a cup coffe :)](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/esmerlinjm)
+Personal Pracice with Flutter and BloC pattern following this tutorial. Credits: [Daniel Ortiz](https://www.youtube.com/channel/UCkYYcjFA_G4G7qjo2jLJNpg).
 
 Your credit cards, debits, etc. in your hands
 
