@@ -1,5 +1,5 @@
 # Card Wallet
-Personal Pracice with Flutter and BloC pattern following this tutorial. Credits: [Daniel Ortiz](https://www.youtube.com/channel/UCkYYcjFA_G4G7qjo2jLJNpg).
+Personal Practice with Flutter and BloC pattern following this tutorial. Credits: [Daniel Ortiz](https://www.youtube.com/channel/UCkYYcjFA_G4G7qjo2jLJNpg).
 
 Your credit cards, debits, etc. in your hands
 
